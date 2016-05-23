@@ -1,0 +1,117 @@
+html,
+body {
+background: #fefcea; /* Old browsers */
+background: -moz-linear-gradient(top,  #fefcea 0%, #f7f183 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefcea), color-stop(98%,#f7f183)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #fefcea 0%,#f7f183 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #fefcea 0%,#f7f183 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #fefcea 0%,#f7f183 98%); /* IE10+ */
+background: linear-gradient(to bottom,  #fefcea 0%,#f7f183 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f7f183',GradientType=0 ); /* IE6-9 */
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  //background-color: #333;
+}
+body {
+  text-align: center;
+  
+}
+
+#button{
+	margin-right: auto;
+	margin-left: auto;
+	height: 6em;
+	width: 17em;
+	background-color: #fff;
+	opacity: .5;
+	margin-bottom: 1em;
+	border-radius: 1em;
+	
+	-webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -kthtml-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+#playText{
+	font-family: "Arial", Helvetica, sans-serif;
+	font-size: 5em;
+}
+
+.shadow{
+	-webkit-box-shadow: 0px 0px 22px 0px #000;
+    -moz-box-shadow: 0px 0px 22px 0px #000;
+    box-shadow: 0px 0px 22px 0px #000;
+    -webkit-transition: all 1s linear;
+    -o-transition: all 1s linear;
+    -moz-transition: all 1s linear;
+    -ms-transition: all 1s linear;
+    -kthtml-transition: all 1s linear;
+    transition: all 1s linear;
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  //padding: 30px;
+  
+}
+
+@media (min-width: 768px) {
+  
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+
+  .cover-container {
+    width: 700px;
+  }
+}
