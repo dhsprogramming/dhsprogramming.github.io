@@ -102,8 +102,16 @@ var username="yay";
 
 $(document).ready(function(){
     gameSetup();
-    
+    setupEscape();
 });
+
+function setupEscape(){
+    $(document).keyup(function(e){
+       if(e.keyCode === 27){
+           toScore();
+       } 
+    });
+}
 
 function gameSetup(){
    /* client.connect(username, function() { 
